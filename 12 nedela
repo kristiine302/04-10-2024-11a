@@ -1,0 +1,40 @@
+1.uzd
+
+import random
+
+n = int(input("Cik reizes veikt kaulina mesanu? "))
+lielaka_summa = 0
+for i in range(n):
+kaulins1 = random.randint(1,6)
+kaulins2 = random.randint(1,6)
+lielakais = max(kaulins1, kaulins2)
+summa = kaulins1 + kaulins2
+print(f"Gajiens {i + 1}: Kaulins 1 = {kaulins1), Kaulins 2 =
+{kaulins2), Lielākais = {lielakais), Summa = {summa)}")
+if summa > lielaka_summa:
+lielaka_summa = summa
+print(f'Lielaka summa no visiem gajieniem:
+{lielaka_summa)")
+
+2.uzd
+
+import random
+
+min_skaitlis = 1
+max_skaitlis = 100
+iedomata_skaitlis = random.randint(min_skaitlis,
+max_skaitlis)
+print(f"Ludzu uzminet skaitli intervalà no {min_skaitlis)
+lidz (max_skaitlis).)
+minesanas_reizes = 0
+while True:
+lietotaja_ievade = int(input("levadi savu minējumu: "))
+minesanas_reizes += 1
+if lietotaja_ievade < iedomata_skaitlis:
+print("Lielaks!")
+elif lietotaja_ievade › iedomata_skaitlis:
+print( "Mazāks!')
+else:
+print(f"Uzminēts! Skaitlis ir {iedomata_skaitlis).")
+break
+print(f"Skatijãt minesanu (minesanas_reizes) reizes.")
