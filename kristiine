@@ -1,0 +1,22 @@
+# Vārdnīca, kas saista balles ar vārdisko skaidrojumu
+vertejumi = { 
+    10: "izcili",
+    9: "teicami",
+    8: "ļoti labi",
+    7: "labi", 
+    6: "gandrīz labi",
+    5: "viduvēji",
+    4: "gandrīz viduvēji",
+    3: "nesekmīgs", 
+    2: "nesekmīgs", 
+    1: "nesekmīgs"
+    }
+
+# Lietotāja 
+ievaden = int(input("Ievadiet balles (1-10): "))
+
+# Pārbaude, vai ievade ir derīga
+if 1 <= n <= 10: 
+    print(f"Vērtējums: {vertejumi[n]}")
+#else:
+#print("Ievadītais skaitlis nav derīgs. Lūdzu, ievadiet skaitli no 1 līdz 10.")
