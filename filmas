@@ -1,0 +1,35 @@
+#izveido vārdnīcu ar informāciju par mīļāko filmu
+filma = {
+    'nosaukums' : 'To all the boys ive loved before' ,
+    'režisors' : 'Susan Johnson' ,
+    'žanrs' : ' romance, drama, comedy' ,
+    ' aktieri' : ['Noa Sentineo', 'Lana Condor']
+    
+}
+#izdruka vardnicu
+#pievieno IMDB reitingu
+filma["IMDB_reitings"] = 7
+
+#Maina žanru
+filma["žanrs"] = "romance, drama, comedy,"
+#izdzēs režisoru
+
+filma 2 = {
+    "nosaukums": "anyone but you"
+    "režisors" : "Will Gluck"
+    "žanrs" : "romance, comedy"
+    "aktieri" : "Sydney Sweeney
+Glen Powell"
+
+#pievieno IMDB reitingu
+filma["IMDB_reitings"] = 6.1
+}
+
+#Maina žanru
+filma["žanrs"] = "romance, drama, comedy,"
+#izdzēs režisoru
+#pievieno otro filmu
+filmas = {"filma1" : filma, "filma2": filma2}
+#izdrukā vārdīcu
+print(filma)
+print(filma2)
